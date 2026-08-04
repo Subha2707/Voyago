@@ -19,6 +19,7 @@ import {
   Wind,
   AlertTriangle,
   ArrowLeft,
+  ArrowRight,
   ExternalLink,
   Plane,
   Train,
@@ -334,7 +335,7 @@ export default function TripResultPage() {
                       {leg.from ? (
                         <>
                           ${leg.from}
-                          <ArrowLeft className='w-4h-4' />
+                          <ArrowRight size={16} className="mx-1 text-muted" />
                           ${leg.to}
                         </>
                       ) : (leg.to)}
