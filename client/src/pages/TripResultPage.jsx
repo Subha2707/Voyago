@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+﻿import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import Navbar from '../components/common/Navbar';
 import Footer from '../components/common/Footer';
@@ -59,7 +59,7 @@ export default function TripResultPage() {
     return Math.max(1, Math.ceil((e - s) / (1000 * 60 * 60 * 24)));
   })();
 
-  // â”€â”€ Load the trip â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  //  Load the trip 
   useEffect(() => {
     const fetchTrip = async () => {
       setLoading(true);
@@ -76,7 +76,7 @@ export default function TripResultPage() {
     fetchTrip();
   }, [id, navigate]);
 
-  // â”€â”€ Generate itinerary once trip is loaded â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  //  Generate itinerary once trip is loaded 
   useEffect(() => {
     if (!trip) return;
 
@@ -104,7 +104,7 @@ export default function TripResultPage() {
     fetchItinerary();
   }, [trip]);
 
-  // â”€â”€ Fetch weather forecast â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // Fetch weather forecast 
   useEffect(() => {
     if (!trip?.destination) return;
 
@@ -138,7 +138,7 @@ export default function TripResultPage() {
     fetchAQI();
   }, [trip?.destination]);
 
-  // â”€â”€ Regenerate a single day â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // Regenerate a single day 
   const handleRegenerateDay = async (dayPlan) => {
     setRegeneratingDay(dayPlan.day);
     try {
@@ -158,7 +158,7 @@ export default function TripResultPage() {
     }
   };
 
-  // â”€â”€ Generate packing list on demand â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // Generate packing list on demand 
   const handleGeneratePackingList = async () => {
     setPackingLoading(true);
     try {
@@ -180,7 +180,7 @@ export default function TripResultPage() {
     }
   };
 
-  // â”€â”€ Chatbot â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // Chatbot 
   const handleSendChat = async (e) => {
     e.preventDefault();
     if (!chatInput.trim()) return;
@@ -331,7 +331,13 @@ export default function TripResultPage() {
                   </div>
                   <div className="flex-1">
                     <div className="font-semibold text-sm">
-                      {leg.from ? `${leg.from} â†’ ${leg.to}` : leg.to}
+                      {leg.from ? (
+                        <>
+                          ${leg.from}
+                          <ArrowLeft className='w-4h-4' />
+                          ${leg.to}
+                        </>
+                      ) : (leg.to)}
                     </div>
                     <div className="text-xxs text-muted capitalize">
                       {leg.mode} · ~{leg.durationHrs || '?'} hrs{leg.seeded ? '' : ' · estimated'}

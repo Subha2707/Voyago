@@ -118,7 +118,7 @@ export default function LandingPage() {
               Explore Destinations
             </Link>
             <Link to="/surprise" className="btn btn-ghost btn-lg text-glow">
-              Surprise Me âœ¨
+              Surprise Me <Sparkles size={18}/>
             </Link>
           </div>
         </div>
