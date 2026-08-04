@@ -4,7 +4,7 @@ import LegalLayout from '../components/common/LegalLayout';
 const sections = [
   {
     title: '1. Information We Collect',
-    body: 'We collect the information you provide directly when you create an account, such as your name, email address, and phone number. When you plan trips, we also store the trip details you enter â€” destinations, dates, traveller counts, interests, and budget preferences â€” so you can revisit them from your dashboard.',
+    body: 'We collect the information you provide directly when you create an account, such as your name, email address, and phone number. When you plan trips, we also store the trip details you enter — destinations, dates, traveller counts, interests, and budget preferences — so you can revisit them from your dashboard.',
   },
   {
     title: '2. How We Use Your Information',

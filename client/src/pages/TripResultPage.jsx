@@ -278,7 +278,7 @@ export default function TripResultPage() {
             <h3 className="text-xl font-semibold mb-6 flex items-center gap-2">
               <Wallet className="text-violet" size={18} /> Budget Breakdown
             </h3>
-            <div className="grid-4 gap-4" style={{ gridTemplateColumns: 'repeat(4, 1fr)' }}>
+            <div className="grid gap-4" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))' }}>
               {[
                 { label: 'Transport', v: trip.estimatedBudget.transport, extra: trip.estimatedBudget.transport?.mode },
                 { label: 'Stay', v: trip.estimatedBudget.stay, extra: trip.estimatedBudget.stay?.tier },

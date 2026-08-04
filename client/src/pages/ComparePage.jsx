@@ -71,7 +71,7 @@ export default function ComparePage() {
 
         {/* Compare Form */}
         <div className="glass-card" style={{ padding: '24px', maxWidth: '800px', margin: '0 auto 40px' }}>
-          <form onSubmit={handleCompare} className="flex items-end gap-4 flex-wrap">
+          <form onSubmit={handleCompare} className="flex items-end gap-4 flex-wrap compare-form">
             <div className="form-group flex-1" style={{ minWidth: '200px', marginBottom: 0 }}>
               <label className="form-label">Destination 1</label>
               <div className="form-input-wrapper">
@@ -93,7 +93,7 @@ export default function ComparePage() {
               </div>
             </div>
 
-            <div className="flex-center font-bold text-muted" style={{ padding: '0 4px 12px' }}>VS</div>
+            <div className="flex-center font-bold text-muted compare-vs" style={{ padding: '0 4px 12px' }}>VS</div>
 
             <div className="form-group flex-1" style={{ minWidth: '200px', marginBottom: 0 }}>
               <label className="form-label">Destination 2</label>

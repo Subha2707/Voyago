@@ -35,7 +35,7 @@ export const calcTripCost = ({
   let journey = null;
 
   if (journeyPlan && journeyPlan.feasible) {
-    // Use the backend journey plan (per-person one-way legs, round trip Ã— travelers)
+    // Use the backend journey plan (per-person one-way legs, round trip — travelers)
     transportMin = journeyPlan.roundTripMin * travelers;
     transportMax = journeyPlan.roundTripMax * travelers;
     transportMode = journeyPlan.mode;
@@ -97,7 +97,7 @@ export const calcTripCost = ({
     const best = flight || train || bus;
 
     if (best) {
-      // Round trip Ã— number of travelers
+      // Round trip — number of travelers
       transportMin = best.avgCostRange.min * travelers * 2;
       transportMax = best.avgCostRange.max * travelers * 2;
       transportMode = best.mode;

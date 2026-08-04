@@ -352,7 +352,7 @@ export const buildJourneyPlan = async ({
     return buildPlan(legs, {
       direct: false,
       mode,
-      note: `No direct ${MODE_LABEL[mode]} â€” travel overland via ${via} (border crossing)`,
+      note: `No direct ${MODE_LABEL[mode]} — travel overland via ${via} (border crossing)`,
     });
   }
 
@@ -376,7 +376,7 @@ export const buildJourneyPlan = async ({
       return buildPlan(legs, {
         direct: false,
         mode: 'flight',
-        note: `No direct flight to ${destination} â€” fly via ${gateway}`,
+        note: `No direct flight to ${destination} — fly via ${gateway}`,
       });
     }
     return {
@@ -437,8 +437,8 @@ export const buildJourneyPlan = async ({
     mode,
     note:
       srcNorm === norm(gateway)
-        ? `No direct ${MODE_LABEL[mode]} to ${destination} â€” final stretch by ${MODE_LABEL[finalMode]} via ${gateway}`
-        : `No direct ${MODE_LABEL[mode]} â€” travel ${MODE_LABEL[mode]} to ${gateway}, then ${MODE_LABEL[finalMode]} to ${destination}`,
+        ? `No direct ${MODE_LABEL[mode]} to ${destination} — final stretch by ${MODE_LABEL[finalMode]} via ${gateway}`
+        : `No direct ${MODE_LABEL[mode]} — travel ${MODE_LABEL[mode]} to ${gateway}, then ${MODE_LABEL[finalMode]} to ${destination}`,
   });
 };
 

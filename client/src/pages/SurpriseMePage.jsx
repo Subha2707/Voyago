@@ -94,7 +94,7 @@ export default function SurpriseMePage() {
 
         <div className="grid-3 gap-8">
           {/* Inputs Panel */}
-          <div className="glass-card" style={{ padding: '24px', height: 'fit-content' }}>
+          <div className="glass-card surprise-form-col" style={{ padding: '24px', height: 'fit-content' }}>
             <h3 className="text-xl font-bold mb-6 flex items-center gap-2">
               <Sliders size={18} className="text-violet" /> Constraints Form
             </h3>
@@ -228,7 +228,7 @@ export default function SurpriseMePage() {
           </div>
 
           {/* Results Panel */}
-          <div className="col-span-2 flex flex-col gap-6" style={{ gridColumn: 'span 2' }}>
+          <div className="col-span-2 flex flex-col gap-6 surprise-results" style={{ gridColumn: 'span 2' }}>
             <h3 className="text-xl font-bold flex items-center gap-2">
               <TrendingUp size={18} className="text-violet" /> Matching Cities
             </h3>

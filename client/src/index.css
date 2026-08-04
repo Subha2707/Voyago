@@ -3723,3 +3723,84 @@ textarea.form-input {
     width: 220px;
   }
 }
+
+/* =============================================
+   RESPONSIVE FIXES (global)
+   ============================================= */
+
+/* Give content a comfortable gap below the fixed navbar on every page. */
+main.container.section,
+main.container section {
+  padding-top: calc(var(--space-24) + 8px);
+}
+
+@media (max-width: 640px) {
+  main.container.section,
+  main.container section {
+    padding-top: var(--space-24);
+  }
+
+  /* Slimmer navbar + breathing room so items never congest */
+  .navbar { padding: 12px 0; }
+  .navbar.scrolled { padding: 8px 0; }
+  .nav-container { padding: 0 var(--space-4); }
+
+  /* Hide the top-bar currency selector on phones; it's available in the
+     mobile drawer, freeing horizontal space next to the logo + burger. */
+  .navbar .nav-auth .currency-selector { display: none; }
+  .nav-auth { gap: var(--space-2); }
+  .nav-logo { font-size: 19px; }
+  .nav-logo .logo-img { width: 32px; height: 32px; }
+}
+
+/* =============================================
+   COMPARE PAGE — VS divider below 768px
+   ============================================= */
+@media (max-width: 768px) {
+  .compare-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch !important;
+    gap: var(--space-4);
+  }
+  .compare-form .form-group { min-width: 0 !important; }
+  .compare-vs {
+    align-self: center;
+    padding: 0 !important;
+    margin: 2px 0;
+  }
+  .compare-form .btn { width: 100%; margin-bottom: 0 !important; }
+}
+
+/* =============================================
+   SURPRISE ME — center the constraints card
+   ============================================= */
+@media (max-width: 768px) {
+  .surprise-results { gridColumn: auto !important; }
+}
+
+@media (max-width: 640px) {
+  .surprise-form-col {
+    max-width: 520px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+/* =============================================
+   LEGAL PAGES (privacy / terms / cookies)
+   ============================================= */
+.legal-card {
+  line-height: 1.7;
+}
+.legal-card h2 { font-size: 1.35rem; font-weight: 700; margin-top: var(--space-2); }
+.legal-card h3 { font-size: 1.1rem; font-weight: 700; margin-top: var(--space-2); color: var(--primary-light); }
+.legal-card p { color: var(--text-secondary); font-size: 14.5px; }
+.legal-card ul { padding-left: var(--space-4); display: flex; flex-direction: column; gap: var(--space-2); }
+.legal-card ul li, .legal-card ol li { color: var(--text-secondary); font-size: 14.5px; }
+.legal-card a { color: var(--accent-violet); }
+
+@media (max-width: 640px) {
+  .legal-card { padding: 24px !important; }
+  .legal-card h1 { font-size: 1.6rem; }
+}

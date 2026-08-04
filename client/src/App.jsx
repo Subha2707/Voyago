@@ -19,6 +19,7 @@ import ComparePage from './pages/ComparePage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import TermsPage from './pages/TermsPage';
 import CookiesPage from './pages/CookiesPage';
+import ContactPage from './pages/ContactPage';
 import NotFoundPage from './pages/NotFoundPage';
 import GoogleCallbackPage from './pages/GoogleCallbackPage';
 
@@ -35,6 +36,7 @@ export default function App() {
       <Route path="/privacy" element={<PrivacyPolicyPage />} />
       <Route path="/terms" element={<TermsPage />} />
       <Route path="/cookies" element={<CookiesPage />} />
+      <Route path="/contact" element={<ContactPage />} />
 
       {/* Guest-only Auth Pages (Redirect to dashboard if logged in) */}
       <Route
