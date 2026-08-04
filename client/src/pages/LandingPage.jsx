@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/common/Navbar';
 import Footer from '../components/common/Footer';
@@ -50,7 +50,7 @@ export default function LandingPage() {
     },
     {
       q: 'Which cities are supported?',
-      a: 'We support 30+ highly-researched destinations across India and the world â€” including Tokyo, London, Paris, Bali, Dubai, New York, Sydney, and more. You can also type any major city and we\'ll fetch live weather and generate an AI itinerary for it.',
+      a: 'We support 30+ highly-researched destinations across India and the world — including Tokyo, London, Paris, Bali, Dubai, New York, Sydney, and more. You can also type any major city and we\'ll fetch live weather and generate an AI itinerary for it.',
     },
     {
       q: 'Is Voyago completely free?',
@@ -107,7 +107,7 @@ export default function LandingPage() {
             Plan Smarter. <span className="gradient-text">Travel Better.</span>
           </h1>
           <p className="hero-subtitle animate-slide-up-delay">
-            AI-powered travel research that calculates budgets, checks weather, ensures safety, and builds day-by-day itineraries â€” without the hassle.
+            AI-powered travel research that calculates budgets, checks weather, ensures safety, and builds day-by-day itineraries — without the hassle.
           </p>
 
           <div className="hero-buttons animate-slide-up-delay-2">

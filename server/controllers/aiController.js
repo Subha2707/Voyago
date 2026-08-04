@@ -1,4 +1,4 @@
-﻿import axios from 'axios';
+import axios from 'axios';
 import CityData from '../models/CityData.js';
 
 const GROQ_API_KEY = process.env.GROQ_API_KEY;
@@ -21,12 +21,12 @@ const seededInt = (seed, min, max) => min + (hashString(seed) % (max - min + 1))
 // Convert an INR amount to the traveler's selected currency for display
 const inrToCurrency = (inr, currency, rate) => {
   if (!currency || currency === 'INR' || !rate) {
-    return `â‚¹${Math.round(inr).toLocaleString('en-IN')}`;
+    return `₹${Math.round(inr).toLocaleString('en-IN')}`;
   }
   const symbolMap = {
-    USD: '$', EUR: 'â‚¬', GBP: 'Â£', JPY: 'Â¥', AED: 'AED ',
-    AUD: 'A$', CAD: 'C$', CHF: 'CHF ', SGD: 'S$', THB: 'à¸¿',
-    MYR: 'RM ', CNY: 'CNÂ¥', HKD: 'HK$', KRW: 'â‚©', TRY: 'â‚º',
+    USD: '$', EUR: '€', GBP: '£', JPY: '¥', AED: 'AED ',
+    AUD: 'A$', CAD: 'C$', CHF: 'CHF ', SGD: 'S$', THB: '฿',
+    MYR: 'RM ', CNY: 'CN¥', HKD: 'HK$', KRW: '₩', TRY: '₺',
     ZAR: 'R ', NZD: 'NZ$',
   };
   const sym = symbolMap[currency] || `${currency} `;
@@ -74,7 +74,7 @@ const generateMockItinerary = (cityData, days, interests = []) => {
   const currentMonth = monthNames[new Date().getMonth()];
   const bestMonth = cityData?.bestMonths?.find((m) => m.month === currentMonth);
   const seasonHint = bestMonth
-    ? `It is currently ${currentMonth} in ${cityName} â€” expect ${bestMonth.tempRange} with a ${bestMonth.crowdLevel} crowd level.`
+    ? `It is currently ${currentMonth} in ${cityName} — expect ${bestMonth.tempRange} with a ${bestMonth.crowdLevel} crowd level.`
     : `Visiting ${cityName}${country ? ', ' + country : ''} right now.`;
 
   const interestTypes = {
@@ -96,7 +96,7 @@ const generateMockItinerary = (cityData, days, interests = []) => {
     }),
     (a, idx) => ({
       morning: `Kick off with ${a[0].name || 'a classic city walk'}. ${a[0].description || `One of the best ways to start your day in ${cityName}.`}`,
-      afternoon: `Dive into local culture at ${a[1].name || 'a neighborhood bazaar'}. Try the street snacks â€” ${cuisines[idx % cuisines.length]} is a crowd favorite here.`,
+      afternoon: `Dive into local culture at ${a[1].name || 'a neighborhood bazaar'}. Try the street snacks — ${cuisines[idx % cuisines.length]} is a crowd favorite here.`,
       evening: `Catch sunset at ${a[2]?.name || 'a popular viewpoint'} before heading to a well-reviewed local restaurant for dinner.`,
     }),
     (a, idx) => ({
@@ -129,14 +129,14 @@ const generateMockItinerary = (cityData, days, interests = []) => {
       evening: plan.evening,
       meals: [
         `Breakfast: Try a local cafe serving ${cuisines[(idx) % cuisines.length]}.`,
-        `Lunch: ${seededPick(`${cityName}-lunch-${idx}`, ['A cozy family-run eatery', 'A bustling food market stall', 'A riverside bistro', 'A hidden gem popular with locals'])} â€” order the house special.`,
+        `Lunch: ${seededPick(`${cityName}-lunch-${idx}`, ['A cozy family-run eatery', 'A bustling food market stall', 'A riverside bistro', 'A hidden gem popular with locals'])} — order the house special.`,
         `Dinner: ${seededPick(`${cityName}-dinner-${idx}`, ['Rooftop dining with a view', 'A traditional restaurant with live local music', 'Street-food walk for the best night snacks'])}.`,
       ],
       tips: seededPick(`${cityName}-tip-${idx}`, [
         `Wear comfortable walking shoes and carry a refillable water bottle. ${seasonHint}`,
         `Start early (around 9 AM) to avoid peak crowds. Keep small cash for local vendors.`,
         `Book popular spots a day in advance during the ${bestMonth?.crowdLevel?.toLowerCase() || 'busy'} season.`,
-        `Ask locals for recommendations â€” they know the best hidden gems around ${cityName}.`,
+        `Ask locals for recommendations — they know the best hidden gems around ${cityName}.`,
       ]),
       focus,
     };
@@ -312,8 +312,8 @@ export const chatbot = async (req, res, next) => {
 Destination: ${cityData.cityName}, ${cityData.country}
 General Safety Score: ${cityData.safetyScore}/10. Solo traveler safety: ${cityData.soloTravelerSafety}/10. Women safety: ${cityData.womenSafety}/10.
 Emergency Contacts: Police (${cityData.emergencyContacts?.police || '100'}), Ambulance (${cityData.emergencyContacts?.ambulance || '102'}).
-Average Costs: Hotel Budget per night: â‚¹${cityData.avgHotelCost?.budget || 1000}, Hotel Mid: â‚¹${cityData.avgHotelCost?.mid || 2500}, Hotel Luxury: â‚¹${cityData.avgHotelCost?.luxury || 6000}.
-Local Food Cost Per Day: Street food: â‚¹${cityData.avgFoodCostPerDay?.streetFood || 300}, Restaurant: â‚¹${cityData.avgFoodCostPerDay?.restaurant || 700}.
+Average Costs: Hotel Budget per night: ₹${cityData.avgHotelCost?.budget || 1000}, Hotel Mid: ₹${cityData.avgHotelCost?.mid || 2500}, Hotel Luxury: ₹${cityData.avgHotelCost?.luxury || 6000}.
+Local Food Cost Per Day: Street food: ₹${cityData.avgFoodCostPerDay?.streetFood || 300}, Restaurant: ₹${cityData.avgFoodCostPerDay?.restaurant || 700}.
 Local transport options: ${cityData.localTransportOptions?.join(', ') || 'cab apps'}.
 Famous spots: ${cityData.attractions?.map((a) => a.name).join(', ') || 'Various tourist attractions'}.
 Famous dishes: ${cityData.cuisine?.join(', ') || 'Local dishes'}.
@@ -333,7 +333,7 @@ Guidelines:
 - Never hallucinate false information about safety or emergency contacts.
 - Speak directly to the traveler.
 - Tailor answers specifically to ${cityName2} whenever possible.
-- Currency: The traveler has selected ${currency || 'INR'} as their display currency. All prices in the context are in INR (â‚¹). Whenever you quote a price, show it converted to ${currency || 'INR'} using the rate 1 INR = ${currencyRate || 1} ${currency || 'INR'}, and round to a sensible value. Never display raw INR figures when another currency is selected.`;
+- Currency: The traveler has selected ${currency || 'INR'} as their display currency. All prices in the context are in INR (₹). Whenever you quote a price, show it converted to ${currency || 'INR'} using the rate 1 INR = ${currencyRate || 1} ${currency || 'INR'}, and round to a sensible value. Never display raw INR figures when another currency is selected.`;
 
         // Format history for Groq API
         const response = await axios.post(
@@ -379,22 +379,22 @@ Guidelines:
     };
 
     if (!cityData) {
-      // No curated city data â€” still give a useful, varied answer from general knowledge
+      // No curated city data — still give a useful, varied answer from general knowledge
       if (lowerMsg.includes('safe') || lowerMsg.includes('security') || lowerMsg.includes('crime')) {
         reply = `For ${cityName2}, general travel advice: check your government's travel advisory, avoid poorly lit areas after dark, and keep valuables out of sight. In an emergency dial 112 where available. Would you like me to look up specific safety details for another city we support?`;
       } else if (lowerMsg.includes('weather') || lowerMsg.includes('rain') || lowerMsg.includes('forecast')) {
         reply = `I can fetch live weather for ${cityName2} from the Weather Forecast section of this page. Meanwhile, a good rule is to check conditions a week ahead and pack layers. Is there anything else about ${cityName2} you'd like to know?`;
       } else if (lowerMsg.includes('food') || lowerMsg.includes('eat') || lowerMsg.includes('restaurant')) {
-        reply = `For authentic eating in ${cityName2}, look for busy local spots away from main tourist squares â€” that's usually where the best, most affordable food is. Tell me what type of cuisine you enjoy and I can tailor suggestions!`;
+        reply = `For authentic eating in ${cityName2}, look for busy local spots away from main tourist squares — that's usually where the best, most affordable food is. Tell me what type of cuisine you enjoy and I can tailor suggestions!`;
       } else if (lowerMsg.includes('cost') || lowerMsg.includes('budget') || lowerMsg.includes('money') || lowerMsg.includes('price')) {
         reply = `Budget for ${cityName2} depends heavily on season and accommodation. As a rough guide, plan for accommodation + food + local transport + a buffer for entry fees and shopping. Want me to run a cost estimate for a specific city in our database?`;
       } else if (lowerMsg.includes('best time') || lowerMsg.includes('when to visit') || lowerMsg.includes('season')) {
         reply = `The best time to visit ${cityName2} usually avoids both peak tourist season and the rainy/extremely hot months. For a precise recommendation, try the Explore page for a city we have data on. Anything else?`;
       } else {
         reply = replyPool('general', [
-          `Great question about ${cityName2}! Could you narrow it down â€” are you asking about safety, costs, food, weather, or what to see?`,
+          `Great question about ${cityName2}! Could you narrow it down — are you asking about safety, costs, food, weather, or what to see?`,
           `For ${cityName2}, the top experiences usually mix history, food, and local neighborhoods. Would you like tips on any of those?`,
-          `Happy to help plan ${cityName2}! Tell me a bit more â€” how many days, your interests, and I'll give more specific advice.`,
+          `Happy to help plan ${cityName2}! Tell me a bit more — how many days, your interests, and I'll give more specific advice.`,
         ]);
       }
     } else {

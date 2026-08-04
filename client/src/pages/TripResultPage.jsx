@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import Navbar from '../components/common/Navbar';
 import Footer from '../components/common/Footer';
@@ -119,7 +119,7 @@ export default function TripResultPage() {
         });
         setForecast(response.data.forecast);
       } catch (err) {
-        // Fail silently â€” weather is a nice-to-have
+        // Fail silently — weather is a nice-to-have
       } finally {
         setWeatherLoading(false);
       }
@@ -163,7 +163,7 @@ export default function TripResultPage() {
     setPackingLoading(true);
     try {
       const weatherSummary = forecast.length > 0
-        ? `${forecast[0].description}, ${forecast[0].temp_max}Â°C / ${forecast[0].temp_min}Â°C, humidity ${forecast[0].humidity}%`
+        ? `${forecast[0].description}, ${forecast[0].temp_max}°C / ${forecast[0].temp_min}°C, humidity ${forecast[0].humidity}%`
         : '';
       const response = await api.post('/ai/packing-list', {
         destination: trip.destination,
@@ -251,8 +251,8 @@ export default function TripResultPage() {
               <MapPin className="text-violet" /> {trip.destination}
             </h1>
             <p className="text-muted mt-2">
-              {trip.source ? `From ${trip.source} Â· ` : ''}
-              {formatDate(trip.startDate)} - {formatDate(trip.endDate)} Â· {days} days
+              {trip.source ? `From ${trip.source} · ` : ''}
+              {formatDate(trip.startDate)} - {formatDate(trip.endDate)} · {days} days
             </p>
           </div>
           <div className="flex gap-4">
@@ -315,7 +315,7 @@ export default function TripResultPage() {
             </h3>
             <p className="text-xs text-muted mb-4">
               {journeyLegs.length > 1
-                ? 'There is no direct connection for this route â€” here is the step-by-step journey.'
+                ? 'There is no direct connection for this route — here is the step-by-step journey.'
                 : 'Direct connection for this route.'}{' '}
               Costs are per person (one way) and vary by season.
             </p>
@@ -334,7 +334,7 @@ export default function TripResultPage() {
                       {leg.from ? `${leg.from} â†’ ${leg.to}` : leg.to}
                     </div>
                     <div className="text-xxs text-muted capitalize">
-                      {leg.mode} Â· ~{leg.durationHrs || '?'} hrs{leg.seeded ? '' : ' Â· estimated'}
+                      {leg.mode} · ~{leg.durationHrs || '?'} hrs{leg.seeded ? '' : ' · estimated'}
                     </div>
                   </div>
                   <div className="text-sm font-bold text-cyan text-right">
@@ -375,7 +375,7 @@ export default function TripResultPage() {
             </h3>
             {days > 7 && forecast.length > 0 && (
               <span className="badge text-xs" style={{ padding: '6px 12px', borderRadius: '16px', background: 'rgba(245,158,11,0.15)', border: '1px solid rgba(245,158,11,0.3)', color: '#fbbf24' }}>
-                Your trip is {days} days â€” only the next 7-day forecast is available.
+                Your trip is {days} days — only the next 7-day forecast is available.
               </span>
             )}
           </div>
@@ -387,7 +387,7 @@ export default function TripResultPage() {
                   <span className="text-xs text-muted block">{new Date(day.date).toLocaleDateString('en-US', { weekday: 'short', day: 'numeric' })}</span>
                   {day.estimated && <span className="text-xxs text-amber font-bold">Est.</span>}
                   <Sun className="text-cyan mx-auto my-2" size={20} />
-                  <span className="font-bold block">{day.temp_max}Â° / {day.temp_min}Â°</span>
+                  <span className="font-bold block">{day.temp_max}° / {day.temp_min}°</span>
                   <span className="text-xxs text-muted capitalize">{day.description}</span>
                   <div className="flex justify-center gap-2 mt-2 text-xxs text-muted">
                     <span className="flex items-center gap-1"><Droplets size={10} /> {day.humidity}%</span>
@@ -415,7 +415,7 @@ export default function TripResultPage() {
                   Air Quality Index <span className="badge text-xs" style={{ padding: '3px 10px', borderRadius: '16px', background: getAQIBg(aqi.aqi) }}>{aqi.level}</span>
                 </div>
                 <p className="text-xs text-muted mt-1">
-                  PM2.5: {aqi.components?.pm2_5} Âµg/mÂ³ Â· PM10: {aqi.components?.pm10} Âµg/mÂ³ Â· CO: {aqi.components?.co}
+                  PM2.5: {aqi.components?.pm2_5} µg/m³ · PM10: {aqi.components?.pm10} µg/m³ · CO: {aqi.components?.co}
                 </p>
               </div>
             </div>
@@ -476,8 +476,7 @@ export default function TripResultPage() {
                   {dayPlan.meals && (
                     <div className="flex flex-wrap gap-2 mb-3">
                       {(Array.isArray(dayPlan.meals) ? dayPlan.meals : [dayPlan.meals]).map((meal, i) => (
-                        <span key={i} className="badge bg-secondary-dark text-xs" style={{ padding: '6px 12px', borderRadius: '16px', background: 'rgba(255,255,255,0.05)' }}>
-                          ðŸ½ï¸ {meal}
+                        <span key={i} className="badge bg-secondary-dark text-xs" style={{ padding: '6px 12px', borderRadius: '16px', background: 'rgba(255,255,255,0.05)' }}> {meal}
                         </span>
                       ))}
                     </div>

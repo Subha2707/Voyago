@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 
 // Full page loader spinner
 export default function Loader() {

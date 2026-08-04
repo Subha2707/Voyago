@@ -54,7 +54,7 @@ app.use(limiter);
 app.get('/api/health', (req, res) => {
   res.json({
     success: true,
-    message: 'Voyago API is running ðŸš€',
+    message: 'Voyago API is running 🚀',
     timestamp: new Date().toISOString(),
     environment: process.env.NODE_ENV || 'development',
   });
@@ -84,9 +84,9 @@ app.use(errorHandler);
 
 // Start Server
 app.listen(PORT, () => {
-  console.log(`ðŸš€ Voyago server running on http://localhost:${PORT}`);
-  console.log(`ðŸ“ Environment: ${process.env.NODE_ENV || 'development'}`);
-  console.log(`ðŸŒ CORS origin: ${process.env.CLIENT_URL || 'http://localhost:5173'}`);
+  console.log(`🚀 Voyago server running on http://localhost:${PORT}`);
+  console.log(`Environment: ${process.env.NODE_ENV || 'development'}`);
+  console.log(`CORS origin: ${process.env.CLIENT_URL || 'http://localhost:5173'}`);
 });
 
 export default app;

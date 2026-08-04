@@ -1,4 +1,4 @@
-﻿/**
+/**
 20 Seed Cities data for Voyago.
 Contains 12 Indian destinations and 8 International destinations.
 Currency costs are in INR.
@@ -24,10 +24,10 @@ export const citiesData = [
     cuisine: ['Fish Curry Rice', 'Pork Vindaloo', 'Feni', 'Bebinca', 'Prawn Balchao'],
     localTransportOptions: ['Rented Scooter', 'Prepaid Taxi', 'Local Bus', 'Auto Rickshaw'],
     bestMonths: [
-      { month: 'November', reason: 'Pleasant weather, onset of tourist festival season.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '22Â°C - 32Â°C' },
-      { month: 'December', reason: 'High energy, Christmas & New Year celebrations. High prices.', crowdLevel: 'High', priceLevel: 'High', tempRange: '21Â°C - 32Â°C' },
-      { month: 'January', reason: 'Perfect cool weather, water sports active.', crowdLevel: 'High', priceLevel: 'High', tempRange: '20Â°C - 31Â°C' },
-      { month: 'February', reason: 'Slightly less crowded, great sunsets.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '21Â°C - 32Â°C' }
+      { month: 'November', reason: 'Pleasant weather, onset of tourist festival season.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '22°C - 32°C' },
+      { month: 'December', reason: 'High energy, Christmas & New Year celebrations. High prices.', crowdLevel: 'High', priceLevel: 'High', tempRange: '21°C - 32°C' },
+      { month: 'January', reason: 'Perfect cool weather, water sports active.', crowdLevel: 'High', priceLevel: 'High', tempRange: '20°C - 31°C' },
+      { month: 'February', reason: 'Slightly less crowded, great sunsets.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '21°C - 32°C' }
     ],
     safetyScore: 8,
     soloTravelerSafety: 8,
@@ -55,10 +55,10 @@ export const citiesData = [
     cuisine: ['Siddu', 'Trout Fish', 'Thukpa', 'Mittha', 'Chha Gosht'],
     localTransportOptions: ['Rented Bike', 'Local Taxi Union', 'Auto Rickshaw'],
     bestMonths: [
-      { month: 'April', reason: 'Beautiful spring blossom and clear skies.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '10Â°C - 25Â°C' },
-      { month: 'May', reason: 'Peak summer escape, pleasant climate.', crowdLevel: 'High', priceLevel: 'High', tempRange: '15Â°C - 28Â°C' },
-      { month: 'June', reason: 'Busy season, good for adventure activities.', crowdLevel: 'High', priceLevel: 'High', tempRange: '15Â°C - 30Â°C' },
-      { month: 'December', reason: 'Snowfall starts, popular for winter honeymooners.', crowdLevel: 'High', priceLevel: 'High', tempRange: '-2Â°C - 10Â°C' }
+      { month: 'April', reason: 'Beautiful spring blossom and clear skies.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '10°C - 25°C' },
+      { month: 'May', reason: 'Peak summer escape, pleasant climate.', crowdLevel: 'High', priceLevel: 'High', tempRange: '15°C - 28°C' },
+      { month: 'June', reason: 'Busy season, good for adventure activities.', crowdLevel: 'High', priceLevel: 'High', tempRange: '15°C - 30°C' },
+      { month: 'December', reason: 'Snowfall starts, popular for winter honeymooners.', crowdLevel: 'High', priceLevel: 'High', tempRange: '-2°C - 10°C' }
     ],
     safetyScore: 9,
     soloTravelerSafety: 9,
@@ -86,10 +86,10 @@ export const citiesData = [
     cuisine: ['Dal Baati Churma', 'Laal Maas', 'Gatte ki Sabzi', 'Pyaz Kachori', 'Ghevar'],
     localTransportOptions: ['E-Rickshaw', 'Metro', 'App Cabs (Uber/Ola)', 'Auto Rickshaw'],
     bestMonths: [
-      { month: 'October', reason: 'Post-monsoon transition, pleasant evenings.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '18Â°C - 33Â°C' },
-      { month: 'November', reason: 'Excellent cool weather, ideal sightseeing.', crowdLevel: 'High', priceLevel: 'Medium', tempRange: '13Â°C - 29Â°C' },
-      { month: 'December', reason: 'Cool winters, cultural festivals active.', crowdLevel: 'High', priceLevel: 'High', tempRange: '8Â°C - 23Â°C' },
-      { month: 'January', reason: 'Kite festival, very pleasant winter weather.', crowdLevel: 'High', priceLevel: 'High', tempRange: '8Â°C - 22Â°C' }
+      { month: 'October', reason: 'Post-monsoon transition, pleasant evenings.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '18°C - 33°C' },
+      { month: 'November', reason: 'Excellent cool weather, ideal sightseeing.', crowdLevel: 'High', priceLevel: 'Medium', tempRange: '13°C - 29°C' },
+      { month: 'December', reason: 'Cool winters, cultural festivals active.', crowdLevel: 'High', priceLevel: 'High', tempRange: '8°C - 23°C' },
+      { month: 'January', reason: 'Kite festival, very pleasant winter weather.', crowdLevel: 'High', priceLevel: 'High', tempRange: '8°C - 22°C' }
     ],
     safetyScore: 8,
     soloTravelerSafety: 8,
@@ -116,9 +116,9 @@ export const citiesData = [
     cuisine: ['Kerala Sadya', 'Appam with Stew', 'Banana Fritters', 'Idiyappam', 'Karimeen Pollichathu'],
     localTransportOptions: ['Auto Rickshaw', 'Local Taxi', 'Jeep Safari'],
     bestMonths: [
-      { month: 'September', reason: 'Fresh lush green landscapes right after monsoons.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '18Â°C - 24Â°C' },
-      { month: 'October', reason: 'Mild climate, light mist.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '17Â°C - 23Â°C' },
-      { month: 'December', reason: 'Coolest month, highly romantic.', crowdLevel: 'High', priceLevel: 'High', tempRange: '12Â°C - 20Â°C' }
+      { month: 'September', reason: 'Fresh lush green landscapes right after monsoons.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '18°C - 24°C' },
+      { month: 'October', reason: 'Mild climate, light mist.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '17°C - 23°C' },
+      { month: 'December', reason: 'Coolest month, highly romantic.', crowdLevel: 'High', priceLevel: 'High', tempRange: '12°C - 20°C' }
     ],
     safetyScore: 9,
     soloTravelerSafety: 9,
@@ -146,9 +146,9 @@ export const citiesData = [
     cuisine: ['Vada Pav', 'Pav Bhaji', 'Bhel Puri', 'Bombay Sandwich', 'Keema Pav'],
     localTransportOptions: ['Local Train', 'Best Bus', 'Black & Yellow Taxi', 'Auto Rickshaw (Suburbs)'],
     bestMonths: [
-      { month: 'November', reason: 'Start of dry season, moderate heat.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '20Â°C - 32Â°C' },
-      { month: 'December', reason: 'Cool ocean breezes, festive events.', crowdLevel: 'High', priceLevel: 'High', tempRange: '18Â°C - 30Â°C' },
-      { month: 'January', reason: 'Pleasant winter weather, low humidity.', crowdLevel: 'High', priceLevel: 'High', tempRange: '17Â°C - 29Â°C' }
+      { month: 'November', reason: 'Start of dry season, moderate heat.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '20°C - 32°C' },
+      { month: 'December', reason: 'Cool ocean breezes, festive events.', crowdLevel: 'High', priceLevel: 'High', tempRange: '18°C - 30°C' },
+      { month: 'January', reason: 'Pleasant winter weather, low humidity.', crowdLevel: 'High', priceLevel: 'High', tempRange: '17°C - 29°C' }
     ],
     safetyScore: 8,
     soloTravelerSafety: 8.5,
@@ -176,9 +176,9 @@ export const citiesData = [
     cuisine: ['Butter Chicken', 'Chole Bhature', 'Golgappe', 'Aloo Chaat', 'Kebabs'],
     localTransportOptions: ['Delhi Metro', 'App Cabs', 'Auto Rickshaw', 'DTC Buses'],
     bestMonths: [
-      { month: 'October', reason: 'End of summer heat, pleasant nights.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '19Â°C - 32Â°C' },
-      { month: 'November', reason: 'Cool winters start, excellent sightseeing.', crowdLevel: 'High', priceLevel: 'Medium', tempRange: '12Â°C - 27Â°C' },
-      { month: 'February', reason: 'Perfect spring breeze, flower festivals.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '11Â°C - 24Â°C' }
+      { month: 'October', reason: 'End of summer heat, pleasant nights.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '19°C - 32°C' },
+      { month: 'November', reason: 'Cool winters start, excellent sightseeing.', crowdLevel: 'High', priceLevel: 'Medium', tempRange: '12°C - 27°C' },
+      { month: 'February', reason: 'Perfect spring breeze, flower festivals.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '11°C - 24°C' }
     ],
     safetyScore: 6,
     soloTravelerSafety: 6,
@@ -205,9 +205,9 @@ export const citiesData = [
     cuisine: ['Kachori Sabzi', 'Banarasi Paan', 'Tamatar Chaat', 'Lassi', 'Rabri'],
     localTransportOptions: ['Cycle Rickshaw', 'Auto Rickshaw', 'Shared E-Rickshaw', 'Boat Ride'],
     bestMonths: [
-      { month: 'October', reason: 'Post-monsoon river access is restored.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '18Â°C - 31Â°C' },
-      { month: 'November', reason: 'Dev Deepawali festival makes it magical.', crowdLevel: 'High', priceLevel: 'High', tempRange: '12Â°C - 28Â°C' },
-      { month: 'December', reason: 'Cool and mist mornings on the Ganges.', crowdLevel: 'High', priceLevel: 'Medium', tempRange: '9Â°C - 23Â°C' }
+      { month: 'October', reason: 'Post-monsoon river access is restored.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '18°C - 31°C' },
+      { month: 'November', reason: 'Dev Deepawali festival makes it magical.', crowdLevel: 'High', priceLevel: 'High', tempRange: '12°C - 28°C' },
+      { month: 'December', reason: 'Cool and mist mornings on the Ganges.', crowdLevel: 'High', priceLevel: 'Medium', tempRange: '9°C - 23°C' }
     ],
     safetyScore: 7.5,
     soloTravelerSafety: 7.5,
@@ -234,9 +234,9 @@ export const citiesData = [
     cuisine: ['Aloo Puri', 'Samosa', 'Chhole-Kulche', 'Ayurvedic Food', 'Masala Tea'],
     localTransportOptions: ['Auto Rickshaw', 'Shared Vikram', 'Scooter Rental'],
     bestMonths: [
-      { month: 'October', reason: 'Perfect air for river rafting.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '15Â°C - 29Â°C' },
-      { month: 'March', reason: 'International Yoga Festival.', crowdLevel: 'High', priceLevel: 'High', tempRange: '14Â°C - 28Â°C' },
-      { month: 'April', reason: 'Clear summer days, ideal rafting water.', crowdLevel: 'High', priceLevel: 'Medium', tempRange: '18Â°C - 33Â°C' }
+      { month: 'October', reason: 'Perfect air for river rafting.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '15°C - 29°C' },
+      { month: 'March', reason: 'International Yoga Festival.', crowdLevel: 'High', priceLevel: 'High', tempRange: '14°C - 28°C' },
+      { month: 'April', reason: 'Clear summer days, ideal rafting water.', crowdLevel: 'High', priceLevel: 'Medium', tempRange: '18°C - 33°C' }
     ],
     safetyScore: 9,
     soloTravelerSafety: 9,
@@ -263,9 +263,9 @@ export const citiesData = [
     cuisine: ['Momos', 'Thukpa', 'Darjeeling Tea', 'Alu Dum', 'Sel Roti'],
     localTransportOptions: ['Shared Jeep', 'Chartered Taxi', 'Darjeeling Himalayan Railway (Toy Train)'],
     bestMonths: [
-      { month: 'October', reason: 'Autumn breeze clears the mist, giving clear mountain views.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '10Â°C - 18Â°C' },
-      { month: 'November', reason: 'Cold weather, very clear blue skies.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '6Â°C - 15Â°C' },
-      { month: 'March', reason: 'Spring bloom of Rhododendrons.', crowdLevel: 'High', priceLevel: 'High', tempRange: '9Â°C - 17Â°C' }
+      { month: 'October', reason: 'Autumn breeze clears the mist, giving clear mountain views.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '10°C - 18°C' },
+      { month: 'November', reason: 'Cold weather, very clear blue skies.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '6°C - 15°C' },
+      { month: 'March', reason: 'Spring bloom of Rhododendrons.', crowdLevel: 'High', priceLevel: 'High', tempRange: '9°C - 17°C' }
     ],
     safetyScore: 8.5,
     soloTravelerSafety: 9,
@@ -292,9 +292,9 @@ export const citiesData = [
     cuisine: ['Seafood Platter', 'Fish Curry', 'Coconut Prawn Curry', 'Fruit Chat', 'Lobster'],
     localTransportOptions: ['Private Ferry', 'Auto Rickshaw', 'Scooter Rental', 'Tourist Cab'],
     bestMonths: [
-      { month: 'November', reason: 'Water sports active, dry season.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '23Â°C - 30Â°C' },
-      { month: 'December', reason: 'Peak festival rush, highly pleasant.', crowdLevel: 'High', priceLevel: 'High', tempRange: '22Â°C - 30Â°C' },
-      { month: 'January', reason: 'Ideal wind speed for scuba and snorkelling.', crowdLevel: 'High', priceLevel: 'High', tempRange: '22Â°C - 30Â°C' }
+      { month: 'November', reason: 'Water sports active, dry season.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '23°C - 30°C' },
+      { month: 'December', reason: 'Peak festival rush, highly pleasant.', crowdLevel: 'High', priceLevel: 'High', tempRange: '22°C - 30°C' },
+      { month: 'January', reason: 'Ideal wind speed for scuba and snorkelling.', crowdLevel: 'High', priceLevel: 'High', tempRange: '22°C - 30°C' }
     ],
     safetyScore: 9,
     soloTravelerSafety: 9,
@@ -321,8 +321,8 @@ export const citiesData = [
     cuisine: ['Pandi Curry (Pork)', 'Kadambuttu (Rice Balls)', 'Bamboo Shoot Curry', 'Filter Coffee'],
     localTransportOptions: ['Auto Rickshaw', 'Rented Bike', 'Local Jeep'],
     bestMonths: [
-      { month: 'October', reason: 'Post-monsoon aroma of fresh coffee blossoms.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '18Â°C - 26Â°C' },
-      { month: 'December', reason: 'Cool winters, cozy homestays are active.', crowdLevel: 'High', priceLevel: 'High', tempRange: '14Â°C - 22Â°C' }
+      { month: 'October', reason: 'Post-monsoon aroma of fresh coffee blossoms.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '18°C - 26°C' },
+      { month: 'December', reason: 'Cool winters, cozy homestays are active.', crowdLevel: 'High', priceLevel: 'High', tempRange: '14°C - 22°C' }
     ],
     safetyScore: 9,
     soloTravelerSafety: 9,
@@ -349,9 +349,9 @@ export const citiesData = [
     cuisine: ['Rajasthani Thali', 'Ker Sangri', 'Mirchi Bada', 'Kachori', 'Sohan Halwa'],
     localTransportOptions: ['Auto Rickshaw', 'Cycle Rickshaw', 'App Taxi', 'Boats'],
     bestMonths: [
-      { month: 'October', reason: 'Lakes are filled, mild temperature.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '18Â°C - 33Â°C' },
-      { month: 'November', reason: 'Ideal weather, clear blue lake reflections.', crowdLevel: 'High', priceLevel: 'High', tempRange: '12Â°C - 28Â°C' },
-      { month: 'December', reason: 'Romantic cool evenings on lakeside.', crowdLevel: 'High', priceLevel: 'High', tempRange: '8Â°C - 24Â°C' }
+      { month: 'October', reason: 'Lakes are filled, mild temperature.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '18°C - 33°C' },
+      { month: 'November', reason: 'Ideal weather, clear blue lake reflections.', crowdLevel: 'High', priceLevel: 'High', tempRange: '12°C - 28°C' },
+      { month: 'December', reason: 'Romantic cool evenings on lakeside.', crowdLevel: 'High', priceLevel: 'High', tempRange: '8°C - 24°C' }
     ],
     safetyScore: 8.5,
     soloTravelerSafety: 8.5,
@@ -380,9 +380,9 @@ export const citiesData = [
     cuisine: ['Pad Thai', 'Tom Yum Goong', 'Green Curry', 'Mango Sticky Rice', 'Som Tum'],
     localTransportOptions: ['BTS Skytrain', 'MRT Metro', 'Tuk Tuk', 'Grab App Taxi'],
     bestMonths: [
-      { month: 'November', reason: 'Cooler dry season starts. Very pleasant.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '23Â°C - 31Â°C' },
-      { month: 'December', reason: 'Peak tourism, pleasant shopping weather.', crowdLevel: 'High', priceLevel: 'High', tempRange: '21Â°C - 30Â°C' },
-      { month: 'January', reason: 'Ideal dry days for city sightseeing.', crowdLevel: 'High', priceLevel: 'High', tempRange: '21Â°C - 31Â°C' }
+      { month: 'November', reason: 'Cooler dry season starts. Very pleasant.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '23°C - 31°C' },
+      { month: 'December', reason: 'Peak tourism, pleasant shopping weather.', crowdLevel: 'High', priceLevel: 'High', tempRange: '21°C - 30°C' },
+      { month: 'January', reason: 'Ideal dry days for city sightseeing.', crowdLevel: 'High', priceLevel: 'High', tempRange: '21°C - 31°C' }
     ],
     safetyScore: 8,
     soloTravelerSafety: 8.5,
@@ -409,9 +409,9 @@ export const citiesData = [
     cuisine: ['Nasi Goreng', 'Babi Guling', 'Sate Lilit', 'Lawar', 'Gado-Gado'],
     localTransportOptions: ['Rented Scooter', 'GoJek / Grab Driver', 'Private Tour Guide'],
     bestMonths: [
-      { month: 'June', reason: 'Dry season, clear sunny skies, low humidity.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '24Â°C - 30Â°C' },
-      { month: 'July', reason: 'Perfect beach weather, busy tourist rush.', crowdLevel: 'High', priceLevel: 'High', tempRange: '23Â°C - 29Â°C' },
-      { month: 'August', reason: 'Peak dry season. Ideal for watersports.', crowdLevel: 'High', priceLevel: 'High', tempRange: '23Â°C - 30Â°C' }
+      { month: 'June', reason: 'Dry season, clear sunny skies, low humidity.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '24°C - 30°C' },
+      { month: 'July', reason: 'Perfect beach weather, busy tourist rush.', crowdLevel: 'High', priceLevel: 'High', tempRange: '23°C - 29°C' },
+      { month: 'August', reason: 'Peak dry season. Ideal for watersports.', crowdLevel: 'High', priceLevel: 'High', tempRange: '23°C - 30°C' }
     ],
     safetyScore: 8.5,
     soloTravelerSafety: 9,
@@ -438,9 +438,9 @@ export const citiesData = [
     cuisine: ['Chilli Crab', 'Hainanese Chicken Rice', 'Laksa', 'Roti Prata', 'Kaya Toast'],
     localTransportOptions: ['MRT Subway', 'Public Bus', 'Grab / Tada App Taxi'],
     bestMonths: [
-      { month: 'February', reason: 'Dry season, least rain, lots of sunshine.', crowdLevel: 'Medium', priceLevel: 'High', tempRange: '24Â°C - 31Â°C' },
-      { month: 'March', reason: 'Excellent outdoor activity window.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '25Â°C - 32Â°C' },
-      { month: 'June', reason: 'Great shopping discounts during Great Singapore Sale.', crowdLevel: 'High', priceLevel: 'High', tempRange: '25Â°C - 31Â°C' }
+      { month: 'February', reason: 'Dry season, least rain, lots of sunshine.', crowdLevel: 'Medium', priceLevel: 'High', tempRange: '24°C - 31°C' },
+      { month: 'March', reason: 'Excellent outdoor activity window.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '25°C - 32°C' },
+      { month: 'June', reason: 'Great shopping discounts during Great Singapore Sale.', crowdLevel: 'High', priceLevel: 'High', tempRange: '25°C - 31°C' }
     ],
     safetyScore: 9.9,
     soloTravelerSafety: 9.9,
@@ -467,9 +467,9 @@ export const citiesData = [
     cuisine: ['Shawarma', 'Al Harees', 'Mandhi', 'Luqaimat', 'Hummus & Falafel'],
     localTransportOptions: ['Dubai Metro', 'RTA Taxi', 'Careem App Taxi', 'Tram'],
     bestMonths: [
-      { month: 'November', reason: 'Pleasant winter temperatures begin.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '19Â°C - 31Â°C' },
-      { month: 'December', reason: 'Excellent cool outdoor climate. High shopping rush.', crowdLevel: 'High', priceLevel: 'High', tempRange: '16Â°C - 26Â°C' },
-      { month: 'January', reason: 'Dubai Shopping Festival peak activities.', crowdLevel: 'High', priceLevel: 'High', tempRange: '15Â°C - 24Â°C' }
+      { month: 'November', reason: 'Pleasant winter temperatures begin.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '19°C - 31°C' },
+      { month: 'December', reason: 'Excellent cool outdoor climate. High shopping rush.', crowdLevel: 'High', priceLevel: 'High', tempRange: '16°C - 26°C' },
+      { month: 'January', reason: 'Dubai Shopping Festival peak activities.', crowdLevel: 'High', priceLevel: 'High', tempRange: '15°C - 24°C' }
     ],
     safetyScore: 9.5,
     soloTravelerSafety: 9.5,
@@ -491,20 +491,20 @@ export const citiesData = [
     attractions: [
       { name: 'Eiffel Tower', type: 'Scenic', description: 'Iconic wrought iron lattice tower on the Champ de Mars.', entryFeeINR: 2400, coords: { lat: 48.8584, lng: 2.2945 } },
       { name: 'Louvre Museum', type: 'Museum', description: 'The world\'s largest art museum holding the Mona Lisa.', entryFeeINR: 1900, coords: { lat: 48.8606, lng: 2.3376 } },
-      { name: 'CathÃ©drale Notre-Dame', type: 'Heritage', description: 'Famed medieval Catholic cathedral.', entryFeeINR: 0, coords: { lat: 48.853, lng: 2.3499 } }
+      { name: 'Cathédrale Notre-Dame', type: 'Heritage', description: 'Famed medieval Catholic cathedral.', entryFeeINR: 0, coords: { lat: 48.853, lng: 2.3499 } }
     ],
     cuisine: ['Croissants', 'Escargot', 'Macarons', 'Crepes', 'Coq au Vin'],
-    localTransportOptions: ['Paris Metro', 'RER Train', 'VÃ©lib Bicycle', 'Uber Cabs'],
+    localTransportOptions: ['Paris Metro', 'RER Train', 'Vélib Bicycle', 'Uber Cabs'],
     bestMonths: [
-      { month: 'April', reason: 'Spring in Paris, blooming parks, pleasant.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '8Â°C - 16Â°C' },
-      { month: 'May', reason: 'Beautiful long daylight hours, spring flowers.', crowdLevel: 'High', priceLevel: 'High', tempRange: '11Â°C - 20Â°C' },
-      { month: 'September', reason: 'Lovely autumn breeze, lesser crowd than summer.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '13Â°C - 22Â°C' }
+      { month: 'April', reason: 'Spring in Paris, blooming parks, pleasant.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '8°C - 16°C' },
+      { month: 'May', reason: 'Beautiful long daylight hours, spring flowers.', crowdLevel: 'High', priceLevel: 'High', tempRange: '11°C - 20°C' },
+      { month: 'September', reason: 'Lovely autumn breeze, lesser crowd than summer.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '13°C - 22°C' }
     ],
     safetyScore: 7.5,
     soloTravelerSafety: 8,
     womenSafety: 7.5,
     emergencyContacts: { police: '17', ambulance: '15', touristHelpline: '112', embassy: '+33-1-40507070' },
-    nearestHospitals: [{ name: 'HÃ´pital Saint-Louis', phone: '+33-1-42494949' }],
+    nearestHospitals: [{ name: 'Hôpital Saint-Louis', phone: '+33-1-42494949' }],
     currency: 'EUR',
     countryCode: 'FR',
     tags: ['city', 'heritage', 'museums', 'art']
@@ -525,9 +525,9 @@ export const citiesData = [
     cuisine: ['Doner Kebab', 'Turkish Delight', 'Baklava', 'Simit', 'Turkish Tea'],
     localTransportOptions: ['Tram', 'Metro', 'Ferry', 'Yellow Taxi'],
     bestMonths: [
-      { month: 'April', reason: 'Tulip festival, perfect cool weather.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '9Â°C - 16Â°C' },
-      { month: 'May', reason: 'Ideal spring weather, very pleasant.', crowdLevel: 'Medium', priceLevel: 'High', tempRange: '12Â°C - 21Â°C' },
-      { month: 'October', reason: 'Stunning autumn colors on the Bosphorus.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '13Â°C - 20Â°C' }
+      { month: 'April', reason: 'Tulip festival, perfect cool weather.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '9°C - 16°C' },
+      { month: 'May', reason: 'Ideal spring weather, very pleasant.', crowdLevel: 'Medium', priceLevel: 'High', tempRange: '12°C - 21°C' },
+      { month: 'October', reason: 'Stunning autumn colors on the Bosphorus.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '13°C - 20°C' }
     ],
     safetyScore: 8,
     soloTravelerSafety: 8,
@@ -554,9 +554,9 @@ export const citiesData = [
     cuisine: ['Pho (Noodle Soup)', 'Banh Mi', 'Fresh Spring Rolls', 'Egg Coffee', 'Bun Cha'],
     localTransportOptions: ['Grab Bike / Car', 'Local Bus', 'Motorbike Taxi'],
     bestMonths: [
-      { month: 'October', reason: 'Autumn breeze in the north, mild dry climate.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '21Â°C - 28Â°C' },
-      { month: 'November', reason: 'Cool dry winds, pleasant sightseeing.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '19Â°C - 26Â°C' },
-      { month: 'December', reason: 'Chilly north winters, very dry, great for tours.', crowdLevel: 'High', priceLevel: 'High', tempRange: '15Â°C - 22Â°C' }
+      { month: 'October', reason: 'Autumn breeze in the north, mild dry climate.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '21°C - 28°C' },
+      { month: 'November', reason: 'Cool dry winds, pleasant sightseeing.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '19°C - 26°C' },
+      { month: 'December', reason: 'Chilly north winters, very dry, great for tours.', crowdLevel: 'High', priceLevel: 'High', tempRange: '15°C - 22°C' }
     ],
     safetyScore: 9,
     soloTravelerSafety: 9,
@@ -583,9 +583,9 @@ export const citiesData = [
     cuisine: ['Kothu Roti', 'Fish Ambul Thiyal', 'Hoppers', 'Pol Sambol', 'Coconut Roti'],
     localTransportOptions: ['Tuk Tuk', 'Public Bus', 'Train (Scenic ride to Ella)', 'PickMe App Cabs'],
     bestMonths: [
-      { month: 'December', reason: 'Dry season on the west & south coast beaches.', crowdLevel: 'High', priceLevel: 'High', tempRange: '23Â°C - 30Â°C' },
-      { month: 'January', reason: 'Spectacular whale watching and sunny beach days.', crowdLevel: 'High', priceLevel: 'High', tempRange: '22Â°C - 30Â°C' },
-      { month: 'February', reason: 'Pleasant climate all across the central hills.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '22Â°C - 31Â°C' }
+      { month: 'December', reason: 'Dry season on the west & south coast beaches.', crowdLevel: 'High', priceLevel: 'High', tempRange: '23°C - 30°C' },
+      { month: 'January', reason: 'Spectacular whale watching and sunny beach days.', crowdLevel: 'High', priceLevel: 'High', tempRange: '22°C - 30°C' },
+      { month: 'February', reason: 'Pleasant climate all across the central hills.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '22°C - 31°C' }
     ],
     safetyScore: 8,
     soloTravelerSafety: 8,
@@ -613,9 +613,9 @@ export const citiesData = [
     cuisine: ['Momos', 'Thukpa', 'Siddu', 'Maggi Corners', 'Lamb Stew'],
     localTransportOptions: ['Local Taxi', 'Heritage Toy Train', 'Walkable City'],
     bestMonths: [
-      { month: 'March', reason: 'Pleasant spring weather, blooming rhododendrons.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '8Â°C - 20Â°C' },
-      { month: 'June', reason: 'Cool escape from plains heat, great for sightseeing.', crowdLevel: 'High', priceLevel: 'High', tempRange: '15Â°C - 28Â°C' },
-      { month: 'December', reason: 'Snowfall and winter charm.', crowdLevel: 'High', priceLevel: 'High', tempRange: '-2Â°C - 12Â°C' }
+      { month: 'March', reason: 'Pleasant spring weather, blooming rhododendrons.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '8°C - 20°C' },
+      { month: 'June', reason: 'Cool escape from plains heat, great for sightseeing.', crowdLevel: 'High', priceLevel: 'High', tempRange: '15°C - 28°C' },
+      { month: 'December', reason: 'Snowfall and winter charm.', crowdLevel: 'High', priceLevel: 'High', tempRange: '-2°C - 12°C' }
     ],
     safetyScore: 8.5,
     soloTravelerSafety: 8.5,
@@ -643,9 +643,9 @@ export const citiesData = [
     cuisine: ['Wazwan', 'Rogan Josh', 'Yakhni', 'Kashmiri Kahwa', 'Modur Pulav'],
     localTransportOptions: ['Local Taxis', 'Shikara', 'Auto Rickshaw'],
     bestMonths: [
-      { month: 'April', reason: 'Spring blossoms at Mughal gardens, pleasant weather.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '8Â°C - 22Â°C' },
-      { month: 'October', reason: 'Golden autumn, clear skies, great sightseeing.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '5Â°C - 20Â°C' },
-      { month: 'December', reason: 'Snowfall in Gulmarg for skiing enthusiasts.', crowdLevel: 'Medium', priceLevel: 'High', tempRange: '-4Â°C - 8Â°C' }
+      { month: 'April', reason: 'Spring blossoms at Mughal gardens, pleasant weather.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '8°C - 22°C' },
+      { month: 'October', reason: 'Golden autumn, clear skies, great sightseeing.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '5°C - 20°C' },
+      { month: 'December', reason: 'Snowfall in Gulmarg for skiing enthusiasts.', crowdLevel: 'Medium', priceLevel: 'High', tempRange: '-4°C - 8°C' }
     ],
     safetyScore: 7.5,
     soloTravelerSafety: 7.5,
@@ -673,9 +673,9 @@ export const citiesData = [
     cuisine: ['Sushi', 'Ramen', 'Tempura', 'Okonomiyaki', 'Matcha Desserts'],
     localTransportOptions: ['Tokyo Metro', 'JR Yamanote Line', 'Taxis', 'Bus'],
     bestMonths: [
-      { month: 'March', reason: 'Cherry blossom season across parks.', crowdLevel: 'High', priceLevel: 'High', tempRange: '5Â°C - 14Â°C' },
-      { month: 'April', reason: 'Full sakura bloom, spectacular city parks.', crowdLevel: 'High', priceLevel: 'High', tempRange: '9Â°C - 18Â°C' },
-      { month: 'November', reason: 'Autumn foliage, comfortable temperatures.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '10Â°C - 17Â°C' }
+      { month: 'March', reason: 'Cherry blossom season across parks.', crowdLevel: 'High', priceLevel: 'High', tempRange: '5°C - 14°C' },
+      { month: 'April', reason: 'Full sakura bloom, spectacular city parks.', crowdLevel: 'High', priceLevel: 'High', tempRange: '9°C - 18°C' },
+      { month: 'November', reason: 'Autumn foliage, comfortable temperatures.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '10°C - 17°C' }
     ],
     safetyScore: 9.5,
     soloTravelerSafety: 9.5,
@@ -703,9 +703,9 @@ export const citiesData = [
     cuisine: ['Fish and Chips', 'Afternoon Tea', 'Full English Breakfast', 'Sunday Roast', 'Pies'],
     localTransportOptions: ['London Underground', 'Red Double-Decker Bus', 'Black Cabs', 'Santander Cycles'],
     bestMonths: [
-      { month: 'May', reason: 'Spring warmth and fewer crowds than summer.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '9Â°C - 18Â°C' },
-      { month: 'June', reason: 'Long daylight hours, outdoor events.', crowdLevel: 'High', priceLevel: 'High', tempRange: '12Â°C - 21Â°C' },
-      { month: 'September', reason: 'Mild autumn, pleasant sightseeing.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '11Â°C - 19Â°C' }
+      { month: 'May', reason: 'Spring warmth and fewer crowds than summer.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '9°C - 18°C' },
+      { month: 'June', reason: 'Long daylight hours, outdoor events.', crowdLevel: 'High', priceLevel: 'High', tempRange: '12°C - 21°C' },
+      { month: 'September', reason: 'Mild autumn, pleasant sightseeing.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '11°C - 19°C' }
     ],
     safetyScore: 8,
     soloTravelerSafety: 8.5,
@@ -733,9 +733,9 @@ export const citiesData = [
     cuisine: ['NYC Pizza', 'Bagels', 'Pastrami Sandwich', 'Cheesecake', 'Street Hot Dogs'],
     localTransportOptions: ['Subway (MTA)', 'Yellow Taxis', 'Ride-Share Apps', 'Bike Sharing'],
     bestMonths: [
-      { month: 'April', reason: 'Spring blossoms, mild crowds.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '7Â°C - 16Â°C' },
-      { month: 'September', reason: 'Perfect weather, fewer crowds than summer.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '16Â°C - 25Â°C' },
-      { month: 'October', reason: 'Autumn colors in Central Park.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '10Â°C - 19Â°C' }
+      { month: 'April', reason: 'Spring blossoms, mild crowds.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '7°C - 16°C' },
+      { month: 'September', reason: 'Perfect weather, fewer crowds than summer.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '16°C - 25°C' },
+      { month: 'October', reason: 'Autumn colors in Central Park.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '10°C - 19°C' }
     ],
     safetyScore: 7,
     soloTravelerSafety: 7.5,
@@ -763,9 +763,9 @@ export const citiesData = [
     cuisine: ['Vegemite Toast', 'Meat Pies', 'Barramundi', 'Pavlova', 'Tim Tams'],
     localTransportOptions: ['Ferry', 'Train (Opal Card)', 'Bus', 'Trams'],
     bestMonths: [
-      { month: 'March', reason: 'End of summer, warm and less crowded.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '19Â°C - 27Â°C' },
-      { month: 'November', reason: 'Spring, pleasant weather before peak summer.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '16Â°C - 25Â°C' },
-      { month: 'December', reason: 'Summer vibes, perfect for beaches.', crowdLevel: 'High', priceLevel: 'High', tempRange: '18Â°C - 26Â°C' }
+      { month: 'March', reason: 'End of summer, warm and less crowded.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '19°C - 27°C' },
+      { month: 'November', reason: 'Spring, pleasant weather before peak summer.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '16°C - 25°C' },
+      { month: 'December', reason: 'Summer vibes, perfect for beaches.', crowdLevel: 'High', priceLevel: 'High', tempRange: '18°C - 26°C' }
     ],
     safetyScore: 8.5,
     soloTravelerSafety: 8.5,
@@ -793,9 +793,9 @@ export const citiesData = [
     cuisine: ['Carbonara', 'Pizza al Taglio', 'Gelato', 'Cacio e Pepe', 'Tiramisu'],
     localTransportOptions: ['Metro', 'Bus', 'Hop-on Hop-off', 'Walking Tours'],
     bestMonths: [
-      { month: 'April', reason: 'Mild spring weather, perfect walking conditions.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '9Â°C - 19Â°C' },
-      { month: 'May', reason: 'Warm days, fewer crowds than June.', crowdLevel: 'Medium', priceLevel: 'High', tempRange: '12Â°C - 23Â°C' },
-      { month: 'October', reason: 'Pleasant autumn, ideal for sightseeing.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '12Â°C - 21Â°C' }
+      { month: 'April', reason: 'Mild spring weather, perfect walking conditions.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '9°C - 19°C' },
+      { month: 'May', reason: 'Warm days, fewer crowds than June.', crowdLevel: 'Medium', priceLevel: 'High', tempRange: '12°C - 23°C' },
+      { month: 'October', reason: 'Pleasant autumn, ideal for sightseeing.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '12°C - 21°C' }
     ],
     safetyScore: 7.5,
     soloTravelerSafety: 8,
@@ -815,23 +815,23 @@ export const citiesData = [
     avgFoodCostPerDay: { streetFood: 600, restaurant: 1800 },
     localTransportCostPerDay: 500,
     attractions: [
-      { name: 'Sagrada Familia', type: 'Heritage', description: 'GaudÃ­\'s towering unfinished basilica, a UNESCO wonder.', entryFeeINR: 2800, coords: { lat: 41.4036, lng: 2.1744 } },
-      { name: 'Park GÃ¼ell', type: 'Scenic', description: 'Colorful mosaic park designed by Antoni GaudÃ­.', entryFeeINR: 1000, coords: { lat: 41.4145, lng: 2.1527 } },
+      { name: 'Sagrada Familia', type: 'Heritage', description: 'Gaudí\'s towering unfinished basilica, a UNESCO wonder.', entryFeeINR: 2800, coords: { lat: 41.4036, lng: 2.1744 } },
+      { name: 'Park Güell', type: 'Scenic', description: 'Colorful mosaic park designed by Antoni Gaudí.', entryFeeINR: 1000, coords: { lat: 41.4145, lng: 2.1527 } },
       { name: 'La Rambla', type: 'Shopping', description: 'Tree-lined pedestrian boulevard with street performers.', entryFeeINR: 0, coords: { lat: 41.3809, lng: 2.173 } },
       { name: 'Barceloneta Beach', type: 'Beach', description: 'Lively urban beach with promenade and seafood restaurants.', entryFeeINR: 0, coords: { lat: 41.3793, lng: 2.1934 } }
     ],
-    cuisine: ['Paella', 'Tapas', 'Patatas Bravas', 'JamÃ³n IbÃ©rico', 'Crema Catalana'],
+    cuisine: ['Paella', 'Tapas', 'Patatas Bravas', 'Jamón Ibérico', 'Crema Catalana'],
     localTransportOptions: ['Metro', 'Bus', 'Bicing Bikes', 'Cable Car'],
     bestMonths: [
-      { month: 'May', reason: 'Warm and sunny, beach-ready weather.', crowdLevel: 'Medium', priceLevel: 'High', tempRange: '15Â°C - 23Â°C' },
-      { month: 'June', reason: 'Long summer days, festivals.', crowdLevel: 'High', priceLevel: 'High', tempRange: '18Â°C - 27Â°C' },
-      { month: 'September', reason: 'Still warm, quieter than peak summer.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '18Â°C - 27Â°C' }
+      { month: 'May', reason: 'Warm and sunny, beach-ready weather.', crowdLevel: 'Medium', priceLevel: 'High', tempRange: '15°C - 23°C' },
+      { month: 'June', reason: 'Long summer days, festivals.', crowdLevel: 'High', priceLevel: 'High', tempRange: '18°C - 27°C' },
+      { month: 'September', reason: 'Still warm, quieter than peak summer.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '18°C - 27°C' }
     ],
     safetyScore: 7,
     soloTravelerSafety: 7.5,
     womenSafety: 7,
     emergencyContacts: { police: '112', ambulance: '112', touristHelpline: '092', embassy: '+34-91-700-4000' },
-    nearestHospitals: [{ name: 'Hospital ClÃ­nic Barcelona', phone: '+34-932-27-54-00' }],
+    nearestHospitals: [{ name: 'Hospital Clínic Barcelona', phone: '+34-932-27-54-00' }],
     currency: 'EUR',
     countryCode: 'ES',
     tags: ['city', 'beach', 'art', 'nightlife']
@@ -853,9 +853,9 @@ export const citiesData = [
     cuisine: ['Biltong', 'Braai (BBQ)', 'Cape Malay Curry', 'Bobotie', 'Wine Tasting'],
     localTransportOptions: ['MyCiTi Bus', 'Ride-share', 'Hop-on Hop-off', 'Metro Rail'],
     bestMonths: [
-      { month: 'March', reason: 'Warm end of summer, sunny and dry.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '17Â°C - 28Â°C' },
-      { month: 'November', reason: 'Spring into summer, beautiful blooms.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '14Â°C - 24Â°C' },
-      { month: 'December', reason: 'Peak summer, beaches at their best.', crowdLevel: 'High', priceLevel: 'High', tempRange: '16Â°C - 26Â°C' }
+      { month: 'March', reason: 'Warm end of summer, sunny and dry.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '17°C - 28°C' },
+      { month: 'November', reason: 'Spring into summer, beautiful blooms.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '14°C - 24°C' },
+      { month: 'December', reason: 'Peak summer, beaches at their best.', crowdLevel: 'High', priceLevel: 'High', tempRange: '16°C - 26°C' }
     ],
     safetyScore: 6.5,
     soloTravelerSafety: 6.5,
@@ -883,9 +883,9 @@ export const citiesData = [
     cuisine: ['Tagine', 'Couscous', 'Mint Tea', 'Pastilla', 'Moroccan Street Snacks'],
     localTransportOptions: ['Petit Taxis', 'Horse Carriages', 'Walking', 'Grand Taxi'],
     bestMonths: [
-      { month: 'March', reason: 'Mild weather, blooming gardens.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '10Â°C - 23Â°C' },
-      { month: 'April', reason: 'Pleasant spring, ideal for the souks.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '12Â°C - 26Â°C' },
-      { month: 'November', reason: 'Comfortable autumn, fewer crowds.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '11Â°C - 23Â°C' }
+      { month: 'March', reason: 'Mild weather, blooming gardens.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '10°C - 23°C' },
+      { month: 'April', reason: 'Pleasant spring, ideal for the souks.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '12°C - 26°C' },
+      { month: 'November', reason: 'Comfortable autumn, fewer crowds.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '11°C - 23°C' }
     ],
     safetyScore: 6.5,
     soloTravelerSafety: 6,
@@ -913,9 +913,9 @@ export const citiesData = [
     cuisine: ['Tacos al Pastor', 'Ceviche', 'Guacamole', 'Elote', 'Margaritas'],
     localTransportOptions: ['ADO Buses', 'Taxis', 'Rental Cars', 'Collectivos'],
     bestMonths: [
-      { month: 'March', reason: 'Dry, sunny weather with calm seas.', crowdLevel: 'High', priceLevel: 'High', tempRange: '22Â°C - 30Â°C' },
-      { month: 'May', reason: 'Warm, fewer crowds before hurricane season.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '24Â°C - 32Â°C' },
-      { month: 'November', reason: 'Post-hurricane-season, pleasant and calm.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '22Â°C - 30Â°C' }
+      { month: 'March', reason: 'Dry, sunny weather with calm seas.', crowdLevel: 'High', priceLevel: 'High', tempRange: '22°C - 30°C' },
+      { month: 'May', reason: 'Warm, fewer crowds before hurricane season.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '24°C - 32°C' },
+      { month: 'November', reason: 'Post-hurricane-season, pleasant and calm.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '22°C - 30°C' }
     ],
     safetyScore: 6.5,
     soloTravelerSafety: 6.5,
@@ -943,9 +943,9 @@ export const citiesData = [
     cuisine: ['Fergburger', 'Lamb', 'Green-lipped Mussels', 'Pavlova', 'Central Otago Wine'],
     localTransportOptions: ['Local Buses', 'Rental Cars', 'Taxis', 'Walking'],
     bestMonths: [
-      { month: 'March', reason: 'Mild autumn, clear skies for adventure sports.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '8Â°C - 19Â°C' },
-      { month: 'December', reason: 'Summer with long, warm days.', crowdLevel: 'High', priceLevel: 'High', tempRange: '11Â°C - 23Â°C' },
-      { month: 'July', reason: 'Winter ski season at The Remarkables.', crowdLevel: 'High', priceLevel: 'High', tempRange: '-1Â°C - 8Â°C' }
+      { month: 'March', reason: 'Mild autumn, clear skies for adventure sports.', crowdLevel: 'Medium', priceLevel: 'Medium', tempRange: '8°C - 19°C' },
+      { month: 'December', reason: 'Summer with long, warm days.', crowdLevel: 'High', priceLevel: 'High', tempRange: '11°C - 23°C' },
+      { month: 'July', reason: 'Winter ski season at The Remarkables.', crowdLevel: 'High', priceLevel: 'High', tempRange: '-1°C - 8°C' }
     ],
     safetyScore: 9,
     soloTravelerSafety: 9,

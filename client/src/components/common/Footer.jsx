@@ -48,7 +48,7 @@ export default function Footer() {
       </div>
       <div className="footer-bottom">
         <p>&copy; {new Date().getFullYear()} Voyago. All rights reserved.</p>
-        <p className="footer-love">Built with ❤️ for smarter travel</p>
+        <p className="footer-love">Built with d for smarter travel</p>
       </div>
     </footer>
   );

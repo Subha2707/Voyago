@@ -3,7 +3,7 @@ import axios from 'axios';
 const RESEND_API_URL = 'https://api.resend.com/emails';
 
 /**
- * Resend (free tier) integration via its REST API — no extra npm dependency.
+ * Resend (free tier) integration via its REST API  no extra npm dependency.
  * Requires RESEND_API_KEY and a verified sender (RESEND_FROM).
  */
 export const isEmailConfigured = () =>
@@ -29,7 +29,7 @@ export const sendOtpEmail = async ({ to, name = '', otp }) => {
 
   await axios.post(
     RESEND_API_URL,
-    { from, to, subject: 'Voyago — Your password reset code', html },
+    { from, to, subject: 'Voyago  Your password reset code', html },
     {
       headers: {
         Authorization: `Bearer ${apiKey}`,

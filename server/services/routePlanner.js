@@ -1,4 +1,4 @@
-﻿import RouteEstimate from '../models/RouteEstimate.js';
+import RouteEstimate from '../models/RouteEstimate.js';
 
 /**
  * Route Planner for Voyago.

@@ -3,7 +3,7 @@
  * Must be registered last (after all routes).
  */
 const errorHandler = (err, req, res, next) => {
-  console.error('🔴 Error:', err.message);
+  console.error('=4 Error:', err.message);
   if (process.env.NODE_ENV === 'development') {
     console.error(err.stack);
   }

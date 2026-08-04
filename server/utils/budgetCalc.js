@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Budget calculation utilities for Voyago.
  * All monetary values are in INR.
  */
@@ -168,7 +168,7 @@ export const calcTripCost = ({
 /**
  * Match destinations to a given budget.
  *
- * tolerance = 0.175 means Â±17.5% from the budget center.
+ * tolerance = 0.175 means ±17.5% from the budget center.
  * FitScore formula: 60% budget proximity + 40% safety score.
  *
  * @param {Object} params
