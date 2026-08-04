@@ -3730,14 +3730,16 @@ textarea.form-input {
 
 /* Give content a comfortable gap below the fixed navbar on every page. */
 main.container.section,
-main.container section {
-  padding-top: calc(var(--space-24) + 8px);
+main.container section,
+.landing-layout > main {
+  padding-top: calc(var(--space-24) + 8px) !important;
 }
 
 @media (max-width: 640px) {
   main.container.section,
-  main.container section {
-    padding-top: var(--space-24);
+  main.container section,
+  .landing-layout > main {
+    padding-top: var(--space-24) !important;
   }
 
   /* Slimmer navbar + breathing room so items never congest */
