@@ -334,9 +334,9 @@ export default function TripResultPage() {
                     <div className="font-semibold text-sm">
                       {leg.from ? (
                         <>
-                          ${leg.from}
+                          {leg.from}
                           <ArrowRight size={16} className="mx-1 text-muted" />
-                          ${leg.to}
+                          {leg.to}
                         </>
                       ) : (leg.to)}
                     </div>
