@@ -1906,6 +1906,11 @@ button.badge.bg-secondary-dark {
   justify-content: center;
   padding: var(--space-6);
   background: var(--bg-primary);
+  background-image: linear-gradient(to bottom, rgba(10, 10, 26, 0.72) 0%, rgba(10, 10, 26, 0.82) 100%),
+    url('/plan-trip.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   position: relative;
   overflow: hidden;
 }
@@ -3098,13 +3103,13 @@ button.badge.bg-secondary-dark {
 }
 
 /* =============================================
-   FORM BACKGROUND — trip-plan.png on every form card
+   FORM BACKGROUND — plan-trip.jpg on every form card
    ============================================= */
 .form-bg-card {
   position: relative;
   overflow: hidden;
   background-image: linear-gradient(to bottom, rgba(10, 10, 26, 0.72) 0%, rgba(10, 10, 26, 0.78) 100%),
-    url('/trip-plan.png') !important;
+    url('/plan-trip.jpg') !important;
   background-size: cover !important;
   background-position: center !important;
 }

@@ -90,7 +90,7 @@ export default function LoginPage() {
 
   return (
     <div className="auth-page flex-center">
-      <div className="auth-card glass-card form-bg-card">
+      <div className="auth-card glass-card">
         <div className="auth-header text-center">
           <Link to="/" className="auth-logo justify-center">
             <img src={logo} alt="Voyago" className="logo-img" />
