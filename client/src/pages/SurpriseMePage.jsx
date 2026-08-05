@@ -94,7 +94,7 @@ export default function SurpriseMePage() {
 
         <div className="grid-3 gap-8">
           {/* Inputs Panel */}
-          <div className="glass-card surprise-form-col" style={{ padding: '24px', height: 'fit-content' }}>
+          <div className="glass-card surprise-form-col form-bg-card" style={{ padding: '24px', height: 'fit-content' }}>
             <h3 className="text-xl font-bold mb-6 flex items-center gap-2">
               <Sliders size={18} className="text-violet" /> Constraints Form
             </h3>

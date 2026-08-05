@@ -58,7 +58,7 @@ export default function GoogleCallbackPage() {
 
   return (
     <div className="auth-page flex-center">
-      <div className="auth-card glass-card text-center" style={{ padding: '40px' }}>
+              <div className="auth-card glass-card form-bg-card text-center" style={{ padding: '40px' }}>
         <img src={logo} alt="Voyago" className="logo-img" style={{ margin: '0 auto 16px' }} />
         <Loader2 className="animate-spin text-violet mx-auto" size={28} style={{ marginBottom: '12px' }} />
         <h2>Signing you in with Google</h2>

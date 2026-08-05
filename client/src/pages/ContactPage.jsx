@@ -85,7 +85,7 @@ export default function ContactPage() {
 
         <div className="grid-3 gap-8">
           {/* Contact form */}
-          <div className="glass-card" style={{ padding: '24px', height: 'fit-content' }}>
+          <div className="glass-card form-bg-card" style={{ padding: '24px', height: 'fit-content' }}>
             <h3 className="text-xl font-bold mb-6 flex items-center gap-2">
               <Mail size={18} className="text-violet" /> Send a Message
             </h3>

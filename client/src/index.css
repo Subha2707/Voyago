@@ -3098,31 +3098,41 @@ button.badge.bg-secondary-dark {
 }
 
 /* =============================================
-   PLAN TRIP PAGE — trip-plan.png on every input
+   FORM BACKGROUND — trip-plan.png on every form card
    ============================================= */
-.plan-trip-card .form-input {
-  background-color: rgba(10, 10, 26, 0.65);
-  background-image: linear-gradient(to bottom, rgba(10, 10, 26, 0.45) 0%, rgba(10, 10, 26, 0.55) 100%),
-    url('/trip-plan.png');
-  background-size: cover;
-  background-position: center;
+.form-bg-card {
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(to bottom, rgba(10, 10, 26, 0.72) 0%, rgba(10, 10, 26, 0.78) 100%),
+    url('/trip-plan.png') !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.form-bg-card .form-input {
+  background: rgba(10, 10, 26, 0.45);
   color: #ffffff;
 }
 
-.plan-trip-card .form-input::placeholder {
-  color: rgba(255, 255, 255, 0.75);
+.form-bg-card .form-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
 }
 
-.plan-trip-card .form-input-wrapper .input-icon {
+.form-bg-card .form-input-wrapper .input-icon {
   color: #ffffff;
   filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.8));
 }
 
-.plan-trip-card .form-input:focus {
-  background-image: linear-gradient(to bottom, rgba(10, 10, 26, 0.55) 0%, rgba(10, 10, 26, 0.6) 100%),
-    url('/trip-plan.png');
-  background-size: cover;
-  background-position: center;
+.form-bg-card .form-label,
+.form-bg-card label,
+.form-bg-card h2,
+.form-bg-card h3 {
+  color: #ffffff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.form-bg-card .form-input:focus {
+  background: rgba(10, 10, 26, 0.55);
   border-color: var(--primary);
   box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25);
 }

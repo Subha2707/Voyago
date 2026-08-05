@@ -70,7 +70,7 @@ export default function ComparePage() {
         </div>
 
         {/* Compare Form */}
-        <div className="glass-card" style={{ padding: '24px', maxWidth: '800px', margin: '0 auto 40px' }}>
+        <div className="glass-card form-bg-card" style={{ padding: '24px', maxWidth: '800px', margin: '0 auto 40px' }}>
           <form onSubmit={handleCompare} className="flex items-end gap-4 flex-wrap compare-form">
             <div className="form-group flex-1" style={{ minWidth: '200px', marginBottom: 0 }}>
               <label className="form-label">Destination 1</label>

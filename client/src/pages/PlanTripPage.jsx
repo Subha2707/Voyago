@@ -195,7 +195,7 @@ export default function PlanTripPage() {
       <Navbar />
 
       <main className="container section flex justify-center">
-        <div className="glass-card plan-trip-card" style={{ maxWidth: '600px', width: '100%', padding: '32px' }}>
+        <div className="glass-card plan-trip-card form-bg-card" style={{ maxWidth: '600px', width: '100%', padding: '32px' }}>
           {/* Step Progress Bar */}
           <div className="step-progress-wrapper mb-8">
             <div className="flex justify-between items-center text-xs text-muted mb-2">
