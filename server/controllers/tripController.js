@@ -3,6 +3,7 @@ import CityData from '../models/CityData.js';
 import RouteEstimate from '../models/RouteEstimate.js';
 import User from '../models/User.js';
 import { calcTripCost, matchDestinationsToBudget } from '../utils/budgetCalc.js';
+import { isValidDestination } from '../data/validCities.js';
 import { getOrBuildCityData } from '../services/cityService.js';
 import { buildJourneyPlan } from '../services/routePlanner.js';
 
@@ -196,10 +197,14 @@ export const surpriseMe = async (req, res, next) => {
         : RouteEstimate.find({}),
     ]);
 
+    // Only consider real, canonical destinations — junk CityData docs created
+    // from partial user inputs (e.g. "da", "Mos") must never show up here.
+    const cityData = allCityData.filter((c) => isValidDestination(c.cityName));
+
     const matches = matchDestinationsToBudget({
       budget: Number(budget),
       tolerance,
-      allCityData,
+      allCityData: cityData,
       allRoutes,
       source: location || '',
       days: Number(travelDays),

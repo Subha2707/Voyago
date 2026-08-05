@@ -1,6 +1,7 @@
 import CityData from '../models/CityData.js';
 import RouteEstimate from '../models/RouteEstimate.js';
 import { calcTripCost, matchDestinationsToBudget } from '../utils/budgetCalc.js';
+import { isValidDestination } from '../data/validCities.js';
 
 // // Calculate full trip cost breakdown
 export const getCostEstimate = async (req, res, next) => {
@@ -94,10 +95,13 @@ export const checkBudget = async (req, res, next) => {
         : RouteEstimate.find({}),
     ]);
 
+    // Only consider real, canonical destinations (see validCities.js)
+    const cityData = allCityData.filter((c) => isValidDestination(c.cityName));
+
     const matches = matchDestinationsToBudget({
       budget: Number(budget),
       tolerance: Number(tolerance),
-      allCityData,
+      allCityData: cityData,
       allRoutes,
       source: source || '',
       days: Number(days),

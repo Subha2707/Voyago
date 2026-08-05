@@ -3898,7 +3898,7 @@ main.container section,
    SURPRISE ME — center the constraints card
    ============================================= */
 @media (max-width: 768px) {
-  .surprise-results { gridColumn: auto !important; }
+  .surprise-results { grid-column: 1 / -1 !important; width: 100%; }
 }
 
 /* City names must wrap fully, never clip */
@@ -3926,8 +3926,8 @@ main.container section,
   }
 
   .surprise-results {
-    justify-self: center;
-    align-self: center;
+    justify-self: stretch;
+    align-self: stretch;
   }
 
   .surprise-results .glass-card {
