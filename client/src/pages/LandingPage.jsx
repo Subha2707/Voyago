@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Navbar from '../components/common/Navbar';
 import Footer from '../components/common/Footer';
+import { useAuthStore } from '../store/authStore';
 import {
   Sparkles,
   Compass,
@@ -18,6 +19,8 @@ import {
 export default function LandingPage() {
   const [scrollY, setScrollY] = useState(0);
   const [faqOpen, setFaqOpen] = useState({});
+  const { isAuthenticated } = useAuthStore();
+  const navigate = useNavigate();
 
   // FAQ Page carousel state
   const [faqPage, setFaqPage] = useState(0);
@@ -81,15 +84,33 @@ export default function LandingPage() {
 
   const visibleFaqs = faqs.slice(faqPage * faqsPerPage, (faqPage + 1) * faqsPerPage);
 
+  const handleDestAction = (e, dest) => {
+    if (!isAuthenticated) {
+      e.preventDefault();
+      navigate('/login');
+      return;
+    }
+    navigate(dest.path);
+  };
+
+  const handleExploreAction = (e) => {
+    if (!isAuthenticated) {
+      e.preventDefault();
+      navigate('/login');
+      return;
+    }
+    navigate('/explore');
+  };
+
   const popularDests = [
-    { name: 'Goa', country: 'India', tag: 'Beaches & Party', color: 'linear-gradient(135deg, #f59e0b 0%, #ec4899 100%)', path: '/plan?dest=Goa' },
-    { name: 'Manali', country: 'India', tag: 'Snowy Peaks', color: 'linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%)', path: '/plan?dest=Manali' },
-    { name: 'Bali', country: 'Indonesia', tag: 'Temples & Beaches', color: 'linear-gradient(135deg, #10b981 0%, #3b82f6 100%)', path: '/plan?dest=Bali' },
-    { name: 'Paris', country: 'France', tag: 'Art & Romance', color: 'linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%)', path: '/plan?dest=Paris' },
-    { name: 'Dubai', country: 'UAE', tag: 'Skyline & Desert', color: 'linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)', path: '/plan?dest=Dubai' },
-    { name: 'Tokyo', country: 'Japan', tag: 'City Lights & Culture', color: 'linear-gradient(135deg, #06b6d4 0%, #8b5cf6 100%)', path: '/plan?dest=Tokyo' },
-    { name: 'Bangkok', country: 'Thailand', tag: 'Street Food & Temples', color: 'linear-gradient(135deg, #ec4899 0%, #f59e0b 100%)', path: '/plan?dest=Bangkok' },
-    { name: 'Jaipur', country: 'India', tag: 'Heritage & Palaces', color: 'linear-gradient(135deg, #ef4444 0%, #f97316 100%)', path: '/plan?dest=Jaipur' },
+    { name: 'Goa', country: 'India', tag: 'Beaches & Party', path: '/plan?dest=Goa', image: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=600&q=80' },
+    { name: 'Manali', country: 'India', tag: 'Snowy Peaks', path: '/plan?dest=Manali', image: 'https://images.unsplash.com/photo-1554629947-334ff61d85dc?auto=format&fit=crop&w=600&q=80' },
+    { name: 'Bali', country: 'Indonesia', tag: 'Temples & Beaches', path: '/plan?dest=Bali', image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=600&q=80' },
+    { name: 'Paris', country: 'France', tag: 'Art & Romance', path: '/plan?dest=Paris', image: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=600&q=80' },
+    { name: 'Dubai', country: 'UAE', tag: 'Skyline & Desert', path: '/plan?dest=Dubai', image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=600&q=80' },
+    { name: 'Tokyo', country: 'Japan', tag: 'City Lights & Culture', path: '/plan?dest=Tokyo', image: 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=600&q=80' },
+    { name: 'Bangkok', country: 'Thailand', tag: 'Street Food & Temples', path: '/plan?dest=Bangkok', image: 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=600&q=80' },
+    { name: 'Jaipur', country: 'India', tag: 'Heritage & Palaces', path: '/plan?dest=Jaipur', image: 'https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=600&q=80' },
   ];
 
   return (
@@ -206,20 +227,20 @@ export default function LandingPage() {
 
         <div className="grid-4 destinations-list">
           {popularDests.map((dest, i) => (
-            <div key={i} className="dest-card glass-card" style={{ '--card-accent': dest.color }}>
-              <div className="dest-card-bg" style={{ background: dest.color }}></div>
+            <div key={i} className="dest-card glass-card">
+              <div className="dest-card-bg" style={{ backgroundImage: `url(${dest.image})` }}></div>
               <div className="dest-card-overlay"></div>
               <div className="dest-card-content">
                 <span className="dest-tag">{dest.tag}</span>
                 <h3>{dest.name}</h3>
                 <p>{dest.country}</p>
                 <div className="dest-card-actions">
-                  <Link to={dest.path} className="btn btn-primary btn-sm dest-card-btn">
+                  <button onClick={(e) => handleDestAction(e, dest)} className="btn btn-primary btn-sm dest-card-btn">
                     Plan Trip <ChevronRight size={14} />
-                  </Link>
-                  <Link to={`/explore`} className="btn btn-ghost btn-sm dest-card-btn-ghost">
+                  </button>
+                  <button onClick={handleExploreAction} className="btn btn-ghost btn-sm dest-card-btn-ghost">
                     Explore
-                  </Link>
+                  </button>
                 </div>
               </div>
             </div>

@@ -25,16 +25,16 @@ export default function LegalLayout({ title, updated, intro, children }) {
           <p className="text-muted text-sm mb-6" style={{ borderLeft: '3px solid rgba(124,58,237,0.4)', paddingLeft: '14px' }}>
             {intro}
           </p>
-          <div className="legal-content flex flex-col gap-6">
-            {children}
-          </div>
-          <div className="mt-10 pt-6 flex flex-wrap items-center gap-3" style={{ borderTop: '1px solid rgba(255,255,255,0.08)' }}>
+          <div className="mb-8 flex flex-wrap items-center gap-3" style={{ borderBottom: '1px solid rgba(255,255,255,0.08)', paddingBottom: '20px' }}>
             <Link to="/" className="btn btn-secondary btn-sm flex-center gap-1">
               <ChevronLeft size={14} /> Back to Home
             </Link>
             <Link to="/contact" className="btn btn-ghost btn-sm">
               Need help? Contact Us
             </Link>
+          </div>
+          <div className="legal-content flex flex-col gap-6">
+            {children}
           </div>
         </div>
       </main>
