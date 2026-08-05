@@ -2734,7 +2734,7 @@ textarea.form-input {
   background: var(--bg-primary);
   background-image: 
     linear-gradient(to bottom, rgba(10, 10, 26, 0.55) 0%, rgba(10, 10, 26, 0.7) 100%),
-    url('https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=1920&q=80');
+    url('/bg-img.png');
   background-size: cover;
   background-position: center;
   pointer-events: none;
