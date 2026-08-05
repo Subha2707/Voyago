@@ -3501,7 +3501,17 @@ button.badge.bg-secondary-dark {
   min-height: 120px;
   justify-content: center;
   cursor: pointer;
+  color: #ffffff !important;
+  background: rgba(10, 10, 26, 0.45);
   transition: var(--transition);
+}
+
+.month-btn span {
+  color: #ffffff !important;
+}
+
+.month-btn span.text-muted {
+  color: rgba(255, 255, 255, 0.7) !important;
 }
 
 .month-btn:hover {
@@ -3891,11 +3901,43 @@ main.container section,
   .surprise-results { gridColumn: auto !important; }
 }
 
+/* City names must wrap fully, never clip */
+.surprise-results .glass-card .flex-1 {
+  min-width: 0;
+}
+
+.surprise-results .glass-card h4 {
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+  min-width: 0;
+}
+
+.surprise-results .glass-card {
+  width: 100%;
+}
+
 @media (max-width: 640px) {
   .surprise-form-col {
     max-width: 520px;
     margin: 0 auto;
     width: 100%;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .surprise-results {
+    justify-self: center;
+    align-self: center;
+  }
+
+  .surprise-results .glass-card {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .surprise-results .glass-card > div.text-right {
+    text-align: left;
   }
 }
 
